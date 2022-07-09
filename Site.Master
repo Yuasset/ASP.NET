@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="ASPWebApplication.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>WEB PROJEM</title>
+    <link rel="Shortcut Icon" href="images/Turkiye.ico" type="image/x-icon">
+    <link href="StyleSheet.css" rel="stylesheet"/>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body> <!-- FIRST TAG MASTER BODY CONTENT -->
+    <form id="form" runat="server">
+    <div class="headder">
+        <!--<div class="logo">
+
+        </div>-->
+        <div class="Menu">
+            <ul class="ULMenu">
+                <li class="LIMenu">
+                    <a class="MenuLink" href="homepage.aspx" onclick="Menu0">Ana Sayfa</a>
+                </li>
+                <li class="LIMenu">
+                    <a class="MenuLink" href="register.aspx">Kayıt</a>
+                </li>
+                <li class="LIMenu">
+                    <a class="MenuLink" href="lists.aspx">Listele</a>
+                </li>
+                <li class="LIMenu">
+                    <a class="MenuLink" href="update.aspx">Düzenle</a>
+                </li>
+                <li class="LIMenu">
+                    <a class="MenuLink" href="report.aspx">Rapor</a>
+                </li>
+                <li class="LIMenu">
+                    <asp:LinkButton runat="server" ID="linklogin" class="MenuLink" OnClick="linklogin_Click" Text="Giriş"></asp:LinkButton>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <div class="footter">
+        <h3 style="color:white; vertical-align:middle;">Çok rahat çok profesyonel</h3>
+    </div>
+
+</body> <!-- FINAL TAG MASTER BODY CONTENT -->
+</html>
